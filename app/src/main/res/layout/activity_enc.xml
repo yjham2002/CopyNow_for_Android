@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Encryption"
+            android:id="@+id/titleText"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF" />
+
+        <android.support.v7.widget.AppCompatButton
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:id="@+id/button2"
+            android:layout_gravity="right|center_vertical"
+            android:textColor="@color/white" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="암호화 혹은 복호화를 수행하기 위해 텍스트와 키를 입력하십시오."
+            android:id="@+id/textView4"
+            android:layout_margin="15dp"
+            android:textColor="@color/colorPrimary" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ems="10"
+                android:id="@+id/key"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:hint="Encryption Key"
+                android:password="true" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/text"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:hint="Copy and Paste Here!" />
+</android.support.design.widget.TextInputLayout>
+        <android.support.v7.widget.AppCompatButton
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Encode"
+            android:id="@+id/encode"
+            android:layout_gravity="center|right"
+             />
+
+        <android.support.v7.widget.AppCompatButton
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Decode"
+            android:id="@+id/decode"
+            android:layout_gravity="center|right"
+             />
+
+    </LinearLayout>
+
+</LinearLayout>
